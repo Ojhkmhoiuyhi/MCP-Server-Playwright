@@ -96,6 +96,7 @@ You can also use MCP Server Playwright with [Cursor](https://www.cursor.so/), an
    If you do not use Claude, the configuration file (`claude_desktop_config.json`) may not be created automatically.  
    - On Windows, create a folder named `Claude` in `%APPDATA%` (usually `C:\Users\<YourName>\AppData\Roaming\Claude`).
    - Inside that folder, create a file named `claude_desktop_config.json` with the following content:
+   
     ```json
     {
       "serverPort": 3456
