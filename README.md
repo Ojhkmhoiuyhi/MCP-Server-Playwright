@@ -78,6 +78,36 @@ The installation process will automatically add the following configuration to y
   }
 }
 ```
+## Using with Cursor
+
+You can also use MCP Server Playwright with [Cursor](https://www.cursor.so/), an AI-powered code editor. To enable browser automation in Cursor via MCP:
+
+1. **Install Playwright browsers** (if not already):
+    ```bash
+    npx playwright install
+    ```
+
+2. **Install MCP Server Playwright for Cursor** using Smithery:
+    ```bash
+    npx -y @smithery/cli install @automatalabs/mcp-server-playwright --client cursor
+    ```
+
+3. **Configuration file setup**:  
+   If you do not use Claude, the configuration file (`claude_desktop_config.json`) may not be created automatically.  
+   - On Windows, create a folder named `Claude` in `%APPDATA%` (usually `C:\Users\<YourName>\AppData\Roaming\Claude`).
+   - Inside that folder, create a file named `claude_desktop_config.json` with the following content:
+   
+    ```json
+    {
+      "serverPort": 3456
+    }
+    ```
+
+4. **Follow the remaining steps in the [Installation](#installation) section above** to complete the setup.
+
+Now, you can use all the browser automation tools provided by MCP Server Playwright directly from Cursor’s AI features, such as web navigation, screenshot capture, and JavaScript execution.
+
+> **Note:** Make sure you have Node.js installed and `npx` available in your system PATH.
 
 ## Components
 
