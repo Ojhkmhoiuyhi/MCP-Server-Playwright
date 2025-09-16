@@ -1,0 +1,16 @@
+args:
+- npm
+- run
+- build
+- "&&"
+- node
+- dist/index.js
+command: npx
+config_schema: 
+description: MCP server for browser automation using Playwright
+env: 
+license: MIT
+owner: Automata-Labs-team
+package: "@automatalabs/mcp-server-playwright"
+server_name: "@automatalabs/mcp-server-playwright"
+vendor: Cprime
